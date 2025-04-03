@@ -74,8 +74,8 @@ function App() {
         </div>
 
         <h2>AI image assessment</h2>
-        <p></p>
       </div>
+      <h3>{inputInstructions}</h3>
       <div className="input-container">
         <input type="file" id="image-upload" accept="image/*" onChange={handleImageUpload} ref={imgInputRef} />
       </div>
