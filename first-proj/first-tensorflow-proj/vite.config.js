@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-	base: './first-tensorflow-proj/',
+	base: './projects/learning-tensorflowjs/first-proj/first-tensorflow-proj/',
 });
