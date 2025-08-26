@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First tensorflowjs Project</title>
+
+    <script type="importmap">
+      {
+	"imports": {
+	  "@tensorflow/tfjs": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/first-tensorflow-proj/assets/index-CJ7pNEI5.js"></script>
+    <link rel="stylesheet" crossorigin href="/first-tensorflow-proj/assets/index-DvU679Fx.css">
+  </head>
+  <body>
+    <h1>simple tensorflowjs model</h1>
+    <h2>this model is a simple squential model trained to predict an output based on an integer value</h2>
+    <h2>the training data is a set of integers from 1 to 5, and the training output data is the same integers multiplied by 2</h2>
+    <h2>ideally this model will output near double whatever you input</h2>
+    <div id="output"></div>
+    <form id="form" onSubmit="handleForm(event);">
+      <label for="predictValue">Enter a number to for the model to predict an output
+        <input type="number" id="predictValue" name="predictValue"></label>
+      <label for="epochValue">Enter a number to tell the model how many iterations to train through
+        <input type="number" id="epochValue" name="epochValue"></label>
+      <button type="submit" value="Predict">Predict</button>
+    </form>
+  </body>
+</html>
