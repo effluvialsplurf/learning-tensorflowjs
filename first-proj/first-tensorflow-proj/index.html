@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First tensorflowjs Project</title>
     <link rel="stylesheet" href="./src/style.css">
   </head>
@@ -14,13 +14,11 @@
     <div id="output"></div>
     <form id="form" onSubmit="handleForm(event);">
       <label for="predictValue">Enter a number to for the model to predict an output
-        <input type="number" id="predictValue" name="predictValue" />
-      </label>
+        <input type="number" id="predictValue" name="predictValue"></label>
       <label for="epochValue">Enter a number to tell the model how many iterations to train through
-        <input type="number" id="epochValue" name="epochValue" />
-      </label>
+        <input type="number" id="epochValue" name="epochValue"></label>
       <button type="submit" value="Predict">Predict</button>
     </form>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
